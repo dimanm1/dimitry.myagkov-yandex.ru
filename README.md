@@ -9,7 +9,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ## Usage
 
-```javsdasdas
+```c#
 class A
 {
   publi List<int> B;
