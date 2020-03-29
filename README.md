@@ -1,8 +1,16 @@
-class Node
-Узел дерева. Узел правильный, если его Address правильный.
-Tree node. Node is correct if its Address is correct.
+# Foobar
 
-1.	Свойства
+Foobar is a Python library for dealing with word pluralization.
 
-1.1.	List<int> Address { get; set; }
-Адрес узла в дереве. Последовательность (...,n2,n1,n0), где n – Number. n0 принадлежит этому узлу, остальные элементы принадлежат его предкам: n1 – к родителю, n2 – к прародителю и т.д., первый элемент – к первопредку. Если последовательность содержит один элемент, то соответствующий узел не имеет предков. Address должен быть уникален в пределах дерева. Address является правильным, если описывает положение 
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install foobar
+```
+
+## Usage
+
+```c#
+List<int>
