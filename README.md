@@ -30,11 +30,7 @@ Console.WriteLine(tree.ToString(x => $"({x.AddressAsString}) {x.Name}"))
 ***
 ## Benefits
 
-##### 1. The position of the node in the tree is determined by only one parameter.
-```csharp
-public List <int> Address { get; set; }
-```
-The child Address contains the Address of its parent.
+1. The position of the node in the tree is determined by only one parameter: `List<int> Address { get; set; }`. The child Address contains the Address of its parent.
 
 ##### 2. A table containing a tree of such nodes cannot be written more than one root.
 Typically, a node in a tree is defined by two parameters: `Id` and `ParentId`. For the root `ParentId == null`, therefore, the column "ParentId" must be set with the `NULL` property. But `null! = null`, so there may be several roots in the table. If the node is not a root, then its Address contains the Address of its parent, so the "ParentId" column is not required.
